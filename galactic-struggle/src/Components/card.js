@@ -1,4 +1,3 @@
-// Card Constructor
 class Card {
     constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
         this.CardName = CardName
@@ -12,190 +11,167 @@ class Card {
 }
 
 class PlasmaBowmen extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Plama Bowmen"
-		this.CardImage = 
-        this.CardEnergy = 1
-        this.CardAttack = 3
-        this.CardHealth = 1
-        this.CardRange = 3
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Plasma Bowman", "", 1, 1, 1, 3, "")
+    }
 }
 
 class RoserootVertebrate extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Roseroot Vertebrate"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = 4
-        this.CardHealth = 5
-        this.CardRange = 1
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Roseroot Vertebrate", "", 2, 4, 5, 1, "")
+    }
 }
 
 class StarJumper extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Star Jumper"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = 2
-        this.CardHealth = 4
-        this.CardRange = 2
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Star Jumper", "", 2, 2, 4, 2, "")
+    }
 }
 
 class OmnigoScrapper extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Omnigo Scrapper"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = 3
-        this.CardHealth = 3
-        this.CardRange = 1
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Omnigo Scrapper", "", 2, 3, 3, 1, "")
+    }
 }
 
 class WaxGasGrenadier extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Wax Gas Genadier"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = 5
-        this.CardHealth = 2
-        this.CardRange = 2
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Wax Gas Grenadier", "", 3, 5, 2, 2, "")
+    }
 }
 
 class CrystalBeamGenerator extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Crystal Beam Generator"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = 4
-        this.CardHealth = 5
-        this.CardRange = 1,2
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Crystal Beam Generator", "", 3, 4, 5, 2, "")
+    }
 }
 
 class EMRcannon extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "EMR Cannon"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = 4
-        this.CardHealth = 2
-        this.CardRange = 4
-        this.CardDescription = ""
-	}
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("EMR Cannon", "", 3, 4, 2, 4, "")
+    }
 }
 
 class AtlasDrill extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Atlas Drill"
-		this.CardImage = 
-        this.CardEnergy = 1
-        this.CardAttack = null
-        this.CardHealth = 6
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Atlas Drill", "", 1, null, 6, null, "")
         //At the start of your turn gain 1 more energy to use during that turn
-	}
+    }
 }
 
 class PressureAmplifier extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Pressure Amplifier"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = null
-        this.CardHealth = 8
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Pressure Amplifier", "", 2, null, 8, null, "")
         //Increase damage of friendly units by 3 that are within Pressure Amplifier's range (in front of that unit)
-	}
+    }
 }
 
 class MirrorWall extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Mirror Wall"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = null
-        this.CardHealth = 10
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Mirror Wall", "", 2, null, 10, null, "")
         //Reflect 1/2 damage rounded up back at units that attack mirror wall
-	}
+    }
 }
 
 class OrdersToAdvance extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Orders to Advance"
-		this.CardImage = 
-        this.CardEnergy = 2
-        this.CardAttack = null
-        this.CardHealth = null
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Orders to Advance", "", 2, null, null, null, "")
         //Move foward all friendly units foward one space from the selected point onwards
-	}
+    }
 }
 
 class DimensionWalk extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Dimension Walk"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = null
-        this.CardHealth = null
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Dimension Walk", "", 3, null, null, null, "")
         //Select any unit and move them either left or right one lane in an unoccupied tile right next to their original location
-	}
+    }
 }
 
 class DivineWhirlwind extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "Divine Whirlwind"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = null
-        this.CardHealth = null
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+        super("Divine Whirlwind", "", 3, null, null, null, "")
         //Move all enemy units back one space from the selected point onwards
-	}
+    }
 }
 
 class MeteorStrike extends Card {
-	constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
-		super(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription)
-		this.CardName = "MeteorStrike"
-		this.CardImage = 
-        this.CardEnergy = 3
-        this.CardAttack = null
-        this.CardHealth = null
-        this.CardRange = null
-        this.CardDescription = ""
+    constructor(CardName, CardImage, CardEnergy, CardAttack, CardHealth, CardRange, CardDescription) {
+   		super("MeteorStrike", "", 3, null, null, null, "")
         //Destroy whatever unit is on the selected tile
-	}
+    }
 }
+
+//Deck
+var Deck = [
+PlasmaBowmen1 = new PlasmaBowmen(),
+PlasmaBowmen2 = new PlasmaBowmen(),
+PlasmaBowmen3 = new PlasmaBowmen(),
+PlasmaBowmen4 = new PlasmaBowmen(),
+PlasmaBowmen5 = new PlasmaBowmen(),
+PlasmaBowmen6 = new PlasmaBowmen(),
+
+RoserootVertebrate1 = new RoserootVertebrate(),
+RoserootVertebrate2 = new RoserootVertebrate(),
+RoserootVertebrate3 = new RoserootVertebrate(),
+RoserootVertebrate4 = new RoserootVertebrate(),
+
+StarJumper1 = new StarJumper(),
+StarJumper2 = new StarJumper(),
+StarJumper3 = new StarJumper(),
+StarJumper4 = new StarJumper(),
+
+OmnigoScrapper1 = new OmnigoScrapper(),
+OmnigoScrapper2 = new OmnigoScrapper(),
+OmnigoScrapper3 = new OmnigoScrapper(),
+OmnigoScrapper4 = new OmnigoScrapper(),
+
+WaxGasGrenadier1 = new WaxGasGrenadier(),
+WaxGasGrenadier2 = new WaxGasGrenadier(),
+
+CrystalBeamGenerator1 = new CrystalBeamGenerator(),
+CrystalBeamGenerator2 = new CrystalBeamGenerator(),
+
+EMRcannon1 = new EMRcannon(),
+EMRcannon2 = new EMRcannon(),
+
+AtlasDrill1 = new AtlasDrill(),
+AtlasDrill2 = new AtlasDrill(),
+AtlasDrill3 = new AtlasDrill(),
+AtlasDrill4 = new AtlasDrill(),
+AtlasDrill5 = new AtlasDrill(),
+AtlasDrill6 = new AtlasDrill(),
+
+PressureAmplifier1 = new PressureAmplifier(),
+PressureAmplifier2 = new PressureAmplifier(),
+PressureAmplifier3 = new PressureAmplifier(),
+PressureAmplifier4 = new PressureAmplifier(),
+
+MirrorWall1 = new MirrorWall(),
+MirrorWall2 = new MirrorWall(),
+MirrorWall3 = new MirrorWall(),
+MirrorWall4 = new MirrorWall(),
+
+OrdersToAdvance1 = new OrdersToAdvance(),
+OrdersToAdvance2 = new OrdersToAdvance(),
+OrdersToAdvance3 = new OrdersToAdvance(),
+OrdersToAdvance4 = new OrdersToAdvance(),
+
+DimensionWalk1 = new DimensionWalk(),
+DimensionWalk2 = new DimensionWalk(),
+
+DivineWhirlwind1 = new DivineWhirlwind(),
+DivineWhirlwind2 = new DivineWhirlwind(),
+
+MeteorStrike1 = new MeteorStrike(),
+MeteorStrike2 = new MeteorStrike()
+];
+
+console.log(Deck);
+
+
+
+
+
+
+
+
