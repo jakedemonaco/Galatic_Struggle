@@ -17,5 +17,3 @@ var BoardArray1 = [undefined, undefined, undefined, undefined, undefined, undefi
 var BoardArray2 = [undefined, undefined, undefined, undefined, undefined, undefined, undefined];
 var BoardArray3 = [undefined, undefined, undefined, undefined, undefined, undefined, undefined];
 var BoardArray4 = [undefined, undefined, undefined, undefined, undefined, undefined, undefined];
-
-
